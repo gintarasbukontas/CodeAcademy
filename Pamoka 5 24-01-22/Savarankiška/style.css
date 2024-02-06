@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: rgb(187, 187, 187);
+    margin: 5px;
+}
+
+header img{
+    width: 33%;
+    margin: 10px auto 0 auto;
+}
+
+#apieMus img{
+    width: 100%;
+    padding: 0px 10px 0px 10px;
+}
+
+#apieMus p{
+    text-align: justify;
+    margin: auto;
+    padding: 10px;
+}
+
+#apieMus{
+    padding: 10px;
+}
+
+#apieMus h2{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+header{
+    text-align: center;
+    min-height: 200px;
+}
+
+a{
+    text-decoration: none;
+    padding: 0px 20px;
+    color: black;
+}
+
+.shadow{
+    border-radius: 7px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.185);
+    background-color: white;
+    margin: 10px auto 0px;
+    width: 50%;
+    padding: 5px;
+}
+
+.imgPreke{
+    width: 150px;
+    max-height: 150px;
+}
+
+#produktai{
+    text-align: center;
+}
+
+.textBold{
+    font-weight: bold;
+}
+
+ul{
+    margin-left: 50px;
+}
+
+iframe{
+    display: block;
+    margin: 0 auto 20px;
+    min-width: 90%;
+}
+
+.center{
+    text-align: center;
+}

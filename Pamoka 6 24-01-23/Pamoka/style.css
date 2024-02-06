@@ -1,0 +1,13 @@
+img{
+    width: 300px;
+}
+
+.instagramLogo{
+    background: blue;
+    /* background-image: url(./Images/dykuma.jpg) */
+}
+
+i{
+    font-size: 50px;
+    color: red;
+}

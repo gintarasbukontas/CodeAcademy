@@ -1,0 +1,266 @@
+*{
+    box-sizing: border-box; 
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    background-color: white;
+    display: flex;
+    height: 120px;
+    box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.15);
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+header > h1, header > nav{
+    margin: 0 50px;
+}
+
+nav > i{
+    font-size: 25px;
+    margin-left: 20px;
+    color: rgb(90, 63, 240);
+}
+
+body{
+    background-color: rgb(241, 241, 241);
+}
+
+section{
+    background-color: white;
+    display: flex;
+    width: 40%;
+    align-items: center;
+    margin: auto;
+    border-radius: 7px;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.row{
+    flex-direction: row;
+}
+
+input[type="search"]{
+    /* width: 500px; */
+    width: 80%;
+    height: 40px;
+    border-radius: 7px;
+    border: 0;
+    outline: 1px solid rgba(0, 0, 0, 0.1);
+    color: rgb(71, 71, 71);
+    font-weight: bold;
+    padding-left: 10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#addButton{
+    background-color: rgb(90, 63, 240);
+    color: white;
+    border-radius: 7px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    height: 38px;
+    /* width: 150px; */
+    width: 19%;
+    border: 0;
+    outline: 1px solid rgba(0, 0, 0, 0.1);
+    margin-left: -5px;
+    font-weight: bold;
+}
+
+#addButton:hover{
+    background-color: rgb(67, 45, 196);
+}
+
+.width100{
+    width: 90%;
+}
+
+#section1 > h1{
+    padding: 20px;
+}
+
+#section1 > div > p{
+    font-size: 15px;
+    color: brown;
+    margin-top: 7px;
+}
+
+#section1{
+    padding-bottom: 30px;
+    box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.15);
+    margin-bottom: 50px;
+}
+
+.purple{
+    color: rgb(90, 63, 240);
+}
+
+#section2{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+}
+
+#section2 > h2{
+    width: 75%;
+}
+
+#section2 > section{
+    width: 10%;
+}
+
+#section2 > div{
+    width: 15%;
+}
+
+#section2 > div > i, #section2 > div > a{
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+.flex{
+    display: flex;
+}
+
+.green{
+    color: green;
+}
+
+.red{
+    color: rgb(116, 0, 0);
+}
+
+#section3{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.15);
+}
+
+#section3 > h2{
+    width: 75%;
+    text-decoration: line-through;
+}
+
+#section3 > section{
+    width: 10%;
+}
+
+#section3 > div{
+    width: 15%;
+}
+
+#section3 > div > i, a{
+    margin-left: 15px;
+}
+
+#section3 i, a{
+    font-size: 20px;
+}
+
+.move{
+    display: flex;
+    margin: 0;
+    justify-content: center;
+}
+
+#section4{
+    display: flex;
+    padding: 20px 0;
+    box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.15);
+}
+
+#section4 > div > label{
+    width: 30%;
+    display: inline-block;
+}
+
+#section4 > div > input{
+    width: 69%;
+    margin-bottom: 20px;
+}
+
+.testColor{
+    background-color: blue;
+}
+
+.spaceAround{
+    justify-content: space-around;
+}
+
+input[type="number"]{
+    /* width: 500px; */
+    width: 80%;
+    height: 40px;
+    border-radius: 7px;
+    border: 0;
+    outline: 0;
+    font-weight: bold;
+    /* padding-left: 10px; */
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+input[type="text"]{
+    /* width: 500px; */
+    width: 80%;
+    height: 40px;
+    border-radius: 7px;
+    border: 0;
+    outline: 1px solid rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+#editButton{
+    background-color: rgb(90, 63, 240);
+    color: white;
+    border-radius: 7px;
+    height: 33px;
+    /* width: 150px; */
+    width: 90%;
+    border: 0;
+    outline: 1px solid rgba(0, 0, 0, 0.1);
+    margin-left: -5px;
+    font-weight: bold;
+}
+
+#editButton:hover{
+    background-color: rgb(67, 45, 196);
+}
+
+label{
+    font-weight: bold;
+}
+
+#section4 > p{
+    font-size: 15px;
+    color: brown;
+}
+
+label, input, button{
+    font-size: 20px;
+}
+
+footer button{
+    display: block;
+    margin: 100px auto 0;
+    width: 300px;
+    height: 50px;
+    background-color: rgb(32, 32, 32);
+    border: 0;
+    outline: 0;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+}
+
+footer button:hover{
+    background-color: rgb(20, 20, 20);
+}

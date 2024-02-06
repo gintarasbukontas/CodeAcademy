@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    border-collapse: collapse;
+}
+
+body{
+    background-color: rgb(11, 12, 20);
+}
+
+nav a{
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 20px;
+    color: rgb(224, 224, 224);
+}
+
+nav{
+    padding: 10px;
+}
+
+header{
+    background-color: rgb(27, 29, 49);
+}
+
+.elementShape{
+    border-radius: 10px;
+    width: 95%;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.elementShapeTwo{
+    border-radius: 10px;
+    width: 95%;
+    background-color: rgba(255, 255, 255, 0.082);
+    
+}
+
+nav a:nth-child(2){
+    color: rgb(255, 63, 63);
+    border-bottom: 5px solid rgb(255, 63, 63);
+}
+
+main{
+    background-color: rgb(27, 29, 49);
+}
+
+.displayInline{
+    display: inline-block;
+}
+
+.allignRight{
+    text-align: right;
+}
+
+.lenteleText{
+    color: rgb(224, 224, 224);
+    text-decoration: underline;
+    font-size: 20px;
+    /* padding-right: 30px; */
+}
+
+.anglijaText{
+    color: rgb(255, 187, 0);
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 15px;
+}
+
+.star{
+    color: rgb(255, 187, 0);
+    font-size: 30px;
+    padding: 0 20px;
+}
+
+.englandFlag{
+    width: 40px;
+    vertical-align:middle;
+}
+
+.width50{
+    width: 46%;
+}
+
+.marginAuto{
+    margin: auto;
+}
+
+.etapas{
+    color: rgb(224, 224, 224);
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px auto 0;
+}
+
+td{
+    color: rgb(224, 224, 224);
+    font-size: 20px;
+    /* border: 1px solid red; */
+    padding: 5px;
+}
+
+.icon{
+    width: 25px;
+    /* background-color: red; */
+}
+
+tr:first-child td:nth-child(4){
+    width: 60%;
+}
+
+tr:first-child td:nth-child(5){
+    width: 5%;
+    
+}
+
+tr:first-child td:nth-child(6){
+    width: 5%;
+}
+
+tr:first-child td:nth-child(7){
+    width: 50%;
+}
+
+tr:first-child td:nth-child(2){
+    width: 8%;
+}
+
+table i{
+    font-size: 25px;
+}
+
+tr:nth-child(even){
+    border-bottom: 1px solid rgba(255, 255, 255, 0.082);
+    
+}
+
+table{
+    width: 100%;
+}
+
+td:last-of-type{
+border-left: 1px solid rgba(255, 255, 255, 0.082);
+}
+
+td:nth-last-child(2){
+    color: gray;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+td:first-of-type, tr:nth-of-type(odd) td:nth-of-type(2){
+    color: gray;
+}
+
+.redCard{
+    color: red;
+    background-color: red;
+    border-radius: 5px;
+    padding-left: 3px;
+    margin-left: 5px;
+}

@@ -1,0 +1,27 @@
+p{
+    font-size: 40px;
+}
+
+span p{
+    font-size: 5px;
+    /* renkasi visus p spane */
+}
+
+span > p{
+    font-size: 99px;
+    /* tiesioginiai span vaikai */
+}
+
+.someClass{
+    font-size: 30px;
+    color: blue;
+}
+
+#par {
+    font-size: 20px;
+    background-color: red;
+}
+
+#someDiv {
+    color: red;
+}

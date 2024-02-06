@@ -1,0 +1,39 @@
+body{
+    background-color: purple;
+}
+
+.container{
+    width: 70%;
+    border: 2px dotted orange;
+    color: rgb(56, 32, 5);
+    text-align: center;
+    background-color: rgba(78, 9, 78, 0.5);
+    padding: 20px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.container h1{
+color: yellow;
+}
+
+.container p{
+    text-align: justify;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+img{
+    width: 80%;
+    border-top: 15px solid white;
+    border-right: 15px solid black;
+    border-bottom: 15px solid green;
+    border-left: 15px solid blue;
+    /* border-radius: 50%; */
+    border-radius: 60px;
+    /* border-top-left-radius: 0px; keičia tik vieno borderio kampo apvalinimą*/ 
+}
+
+.container p::first-letter{
+    font-size: 50px;
+}

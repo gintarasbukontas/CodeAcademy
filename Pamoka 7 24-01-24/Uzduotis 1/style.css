@@ -1,0 +1,23 @@
+table{
+    border-collapse: collapse;
+}
+
+th, td{
+    border: 1px solid black;
+    text-align: left;
+    padding: 5px;
+}
+
+.geltona{
+    background-color: rgb(255, 251, 0);
+}
+
+.zalia{
+    background-color: green;
+    color: white;
+}
+
+.raudona{
+    background-color: red;
+    color: white;
+}

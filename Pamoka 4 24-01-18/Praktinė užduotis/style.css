@@ -1,0 +1,50 @@
+header img{
+    width: 300px;
+    display: block;
+    margin: auto;
+    padding: 10px;
+}
+
+header nav{
+    text-align: center;
+    background-color: green;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    word-spacing: 50px;
+}
+
+header nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+main{
+    text-align: center;
+    margin: auto;
+    width: 1600px;
+}
+
+main img{
+    padding-top: 10px;
+    width: 100%;
+}
+
+h1{
+    background-color: green;
+    text-align: left;
+    color: white;
+    padding: 10px;
+}
+
+p{
+    text-align: justify;
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    width: 1600px;
+    background-color: rgb(178, 255, 178);
+}

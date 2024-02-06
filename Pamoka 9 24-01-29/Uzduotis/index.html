@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Payment form</h1>
+    <p>Required fields are followed by *</p>
+    <h2>Contact information</h2>
+    <form action="https://formspree.io/f/xzbndwlb" method="post">
+      <fieldset>
+        <legend>Title</legend>
+        <input name="gender" type="radio" id="title-mister" />
+        <label for="title-mister">Mister</label>
+        <br />
+        <input name="gender" type="radio" id="title-miss" />
+        <label for="title-miss">Miss</label>
+      </fieldset>
+      <br />
+      <label for="vardas">Name: *</label>
+      <input id="vardas" type="text" required name="name" />
+      <br />
+      <label for="emailas">Email: *</label>
+      <input id="emailas" type="email" required name="email" />
+      <br />
+      <label for="slaptazodis">Password: *</label>
+      <input id="slaptazodis" type="password" required name="password" />
+      <h2>Payment information</h2>
+      <label for="korteles-tipas">Card type:</label>
+      <select required name="card-type" id="korteles-tipas">
+        <option value="">Visa</option>
+        <option value="">Mastercard</option>
+      </select>
+      <br />
+      <label for="card-number">Card number: *</label>
+      <input
+        type="number"
+        min="1000000000000000"
+        max="9999999999999999"
+        id="card-number"
+        required
+        placeholder=" "
+      />
+      <br />
+      <label for="">Expiration date: *</label>
+      <input type="month" required />
+      <br />
+      <button type="submit">Validate the payment</button>
+    </form>
+  </body>
+</html>

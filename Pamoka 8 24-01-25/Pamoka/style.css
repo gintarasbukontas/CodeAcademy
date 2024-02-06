@@ -1,0 +1,62 @@
+p:first-child{
+    color: red;
+}
+
+p:last-child{
+    color: blue;
+}
+
+p:nth-child(2){
+    color: green;
+}
+
+div:nth-child(3) p:nth-last-child(2){
+    background-color: yellow;
+}
+
+p:only-child{
+    color: orange;
+}
+
+p:first-of-type{
+    color: aqua;
+}
+
+p:last-of-type{
+    font-weight: bold;
+}
+
+p:nth-of-type(2){
+    text-decoration: underline;
+}
+
+p:only-of-type{
+    text-transform: uppercase;
+}
+
+p::first-letter{
+    font-size: 50px;
+}
+
+.someClass{
+    font-style: italic;
+}
+
+.someClass::first-letter {
+    font-size: 50px;
+}
+
+p::first-line{
+    color: red;
+}
+
+h4::before{
+    content: "Kazkas pries ";
+    color: greenyellow;
+}
+
+h4::after{
+    content: "Kazkas po ";
+    padding: 20px;
+    color: orange;
+}

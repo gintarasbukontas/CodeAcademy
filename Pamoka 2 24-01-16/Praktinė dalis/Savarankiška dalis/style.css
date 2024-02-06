@@ -1,0 +1,27 @@
+html{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 20px; 
+    /* 12px atrode per mazas narsykleje, bet esme suprantu */
+}
+
+.melynasLinkas{
+color: blue;
+}
+
+.zaliasPabrauktas a{
+    color: green;
+    text-decoration: underline;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.didesnisTarpasTarpTeksto{
+    line-height: 2;
+}
+
+.pilkasFonas{
+    background-color: rgb(197, 197, 197);
+}

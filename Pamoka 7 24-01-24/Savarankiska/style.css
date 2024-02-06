@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+}
+
+header img{
+    width: 10%;
+    display: block;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+header{
+    background-color: black;
+}
+
+header nav{
+    background-color: rgb(231, 189, 0);
+    width: 66%;
+    margin: auto;
+    text-align: right;
+    padding: 15px;
+    
+}
+
+header h1{
+    color: white;
+    width: 66%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    padding-left: 15px;
+}
+
+.widthSixtySix{
+    width: 66%;
+    margin: auto;
+}
+
+main p{
+    text-align: justify;
+}
+
+button{
+    display: block;
+    margin: auto;
+    width: 120px;
+    height: 30px;
+    background-color: red;
+    color: white;
+    text-decoration: underline;
+    border-radius: 10px;
+    border: 0;
+}
+
+button:hover{
+    display: block;
+    margin: auto;
+    width: 120px;
+    height: 30px;
+    background-color: rgb(148, 0, 0);
+    color: white;
+    text-decoration: underline;
+    border-radius: 10px;
+    border: 0;
+}
+
+#tablesSection{
+    background-color: rgb(13, 13, 88);
+    color: white;
+    display: block;
+    width: 66%;
+    margin: auto;
+}
+
+th, tr, td{
+    border: 2px solid red;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.bgBlue{
+    background-color: rgb(13, 13, 88);
+}
+
+.paddingTop{
+    padding-top: 10px;
+}
+
+.paddingBottom{
+    padding-bottom: 10px;
+}
+
+.paddingRight{
+    padding-right: 10px;
+}
+
+.textAllignCenter{
+    text-align: center;
+}
+
+.textAllignRight{
+    text-align: right;
+}
+
+td{
+    height: 40px;
+}
+
+footer a{
+    color: blue;
+}
+
+.bgYellow{
+    background-color: rgb(231, 189, 0);
+}
+
+.textWhite{
+    color: white;
+    padding: 1px;
+}

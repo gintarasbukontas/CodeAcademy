@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(35, 35, 53);
+}
+
+header h1{
+    color: yellow;
+}
+
+header h1::before{
+    content: "Futbolo ";
+    color: rgb(52, 164, 255);
+}
+
+header img{
+    width: 33%;
+    background-color: white;
+    border-radius: 25px;
+    padding: 5px;
+}
+
+header{
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header h2{
+    color: rgb(235, 61, 61);
+}
+
+table{
+    width: 80%;
+    margin: auto;
+}
+
+th{
+    /* border: 1px solid black; */
+    font-size: 25px;
+    padding: 5px;
+}
+
+tr:nth-of-type(even){
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+tr:nth-of-type(odd) :not(th){
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+th:nth-child(2),th:nth-child(3),th:nth-child(4),th:nth-child(5),th:nth-child(6){
+    text-transform:uppercase;
+}
+
+th:nth-child(7), th:nth-child(8), th:nth-child(9){
+    text-transform: capitalize;
+}
+
+th, td{
+    padding: 10px;
+    font-size: 20px;
+    color: rgb(201, 201, 201);
+}
+
+td:first-child{
+    color: red;
+}
+
+span{
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 5px;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+}
+
+tr:nth-child(2) span:nth-child(1), tr:nth-child(2) span:nth-child(3), tr:nth-child(2) span:nth-child(4), tr:nth-child(2) span:nth-child(5), tr:nth-child(3) span:nth-child(1), tr:nth-child(3) span:nth-child(2), tr:nth-child(3) span:nth-child(3), tr:nth-child(3) span:nth-child(5), tr:nth-child(4) span:nth-child(1), tr:nth-child(4) span:nth-child(3), tr:nth-child(5) span:nth-child(1), tr:nth-child(5) span:nth-child(2), tr:nth-child(5) span:nth-child(3), tr:nth-child(5) span:nth-child(5), tr:nth-child(6) span:nth-child(1), tr:nth-child(6) span:nth-child(4), tr:nth-child(6) span:nth-child(5){
+    background-color: rgb(0, 255, 0);
+}
+
+tr:nth-child(2) span:nth-child(2), tr:nth-child(3) span:nth-child(4), tr:nth-child(4) span:nth-child(2), tr:nth-child(4) span:nth-child(4), tr:nth-child(5) span:nth-child(4){
+    background-color: rgb(255, 187, 0);
+}
+
+tr td{
+max-width: 120px;
+}

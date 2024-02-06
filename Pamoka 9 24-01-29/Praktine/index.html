@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <h1>Contact Us!</h1>
+      <form action="">
+        <label for="vardas">Name:</label>
+        <br />
+        <input
+          type="text"
+          placeholder="Petras"
+          id="vardas"
+          required
+          minlength="3"
+          maxlength="20"
+        />
+        <br />
+        <label for="elpastas">Email:</label>
+        <br />
+        <input
+          type="email"
+          placeholder="petras@petras.lt"
+          id="elpastas"
+          required
+        />
+        <label for="numeris">Reference Number:</label>
+        <br />
+        <input type="number" placeholder="12213" id="numeris" required />
+        <br />
+        <label for="pasirinkimas">Santa Wish:</label>
+        <select name="" size="1" id="pasirinkimas" required>
+          <option value=""></option>
+          <option value="chaos">Chaos Orb</option>
+          <option value="divine">Divine Orb</option>
+          <option value="exalted">Exalted Orb</option>
+          <option value="mirror">Mirror of Kalandra</option>
+          <option value="Tabula">Tabula Rasa</option>
+        </select>
+        <label for="" class="displayInlineBlock">Gender:</label>
+        <input name="rinktis" type="radio" class="radio" required />
+        <label for="" class="paddingZero">Male</label>
+        <br />
+        <input name="rinktis" type="radio" class="radio" required />
+        <label for="" class="paddingZero">Female</label>
+        <br />
+        <input name="rinktis" type="radio" class="radio" required />
+        <label for="" class="paddingZero">Weirdo</label>
+        <br />
+        <label for="teksto-laukelis"></label>
+        <textarea
+          name=""
+          id="teksto-laukelis"
+          cols="30"
+          rows="2"
+          placeholder="Your message goes here..."
+          maxlength="300"
+        ></textarea>
+        <br />
+        <button type="submit">Send!</button>
+      </form>
+    </section>
+  </body>
+</html>

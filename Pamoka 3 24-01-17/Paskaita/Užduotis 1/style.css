@@ -1,0 +1,32 @@
+.logoSize{
+    width: 75px;
+}
+
+nav{
+    display: inline;
+    /* vertical-align: 150%; */
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    color: orange;
+}
+
+.textCenter{
+text-align: center;
+}
+
+.halfWidth{
+    width: 49%;
+    display: inline-block;
+}
+
+.thirdWidth{
+    width: 32%;
+    display: inline-block
+}
