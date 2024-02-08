@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 header > .wrapper{
     display: flex;
     justify-content: space-between;
@@ -32,6 +36,7 @@ header nav a:hover{
     height: 40px;
     padding: 10px 20px;
     font-size: 14px;
+    cursor: pointer;
 }
 
 header nav button:hover{
@@ -89,4 +94,137 @@ header nav button:hover{
 
 .studentamsContainer button:hover{
     color: rgb(89, 43, 255);
+}
+
+.burger{
+    display: none;
+    border: none;
+    background: none;
+    font-size: 36px;
+}
+
+.sectionCALive{
+    padding-bottom: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.sectionCALive h1{
+    font-size: 70px;
+}
+
+.gridContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.gridContainer h3{
+    font-size: 45px;
+    margin-bottom: 0;
+}
+
+.gridContainer p{
+    margin-top: 0;
+}
+
+.bold{
+    font-weight: 600;
+}
+
+.smallWidth{
+    width: 40%;
+}
+
+.genericParagraph{
+    line-height: 1.5;
+}
+
+.sectionMotivation{
+    background-image: url("https://codeacademy.lt/wp-content/uploads/2021/03/sample-image.jpg");
+    padding: 20px;
+    color: white;
+    padding-bottom: 90px;
+}
+
+.sectionMotivation h1{
+    font-size: 70px;
+    line-height: 0.9;
+}
+
+.sectionMotivation button{
+    background-color: white;
+    color: black;
+    width: 200px;
+    font-size: 12px;
+    padding: 12px 30px;
+}
+
+.testColor{
+    background-color: red;
+}
+
+@media screen and (max-width: 700px) {
+    header nav{
+        display: none;
+    }
+
+    .burger{
+        display: block;
+    }
+
+    .sectionStudents{
+        padding-right: 0;
+        padding-left: 0;
+        padding-bottom: 30px;
+    }
+
+    .sectionStudents nav{
+        justify-content: center;
+    }
+
+    .sectionStudents nav a{
+        flex: 1;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .studentamsContainer{
+        padding: 30px;
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .studentamsContainer h1{
+        margin-top: 0;
+    }
+
+    .button{
+        width: 100%;
+    }
+
+    .sectionCALive > .wrapper > p:first-of-type{
+        width: 80%;
+    }
+
+    .gridContainer{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .sectionMotivation br{
+        display: none;
+    }
+
+    .sectionMotivation h1{
+        font-size: 50px;
+    }
+
+    .sectionMotivation p{
+        width: 100%;
+    }
+
+    .sectionMotivation button{
+        width: 100%;
+    }
 }
