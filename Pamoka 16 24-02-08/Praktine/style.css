@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: rgb(224, 224, 224);
+}
+
+header, main{
+    background-color: rgb(243, 243, 243);
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.4);
+}
+
+header{
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+header img{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+header nav a{
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+    color: rgb(195, 43, 226);
+    padding: 15px;
+}
+
+.wrapper{
+    max-width: 90%;
+    margin: auto;
+}
+
+main{
+    border-radius: 10px;
+    padding: 10px 30px 70px;
+}
+
+.sectionBooks h1, .sectionBooks th{
+    color: rgb(75, 96, 126);
+}
+
+.sectionBooks td{
+    color: rgb(75, 96, 126);
+}
+
+.sectionBooks h1{
+    font-size: 3.2rem;
+    margin-top: 15px;
+    font-weight: 350;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.sectionBooks th, .sectionBooks td{
+    border-bottom: 2px solid rgb(214, 214, 214);
+    min-width: 50%;
+    text-align: left;
+    padding: 20px 0;
+    font-size: 1.6rem;
+}
+
+footer{
+    margin-top: 40px;
+}
+
+footer p{
+    text-align: center;
+    font-size: 1.7rem;
+    color: gray;
+}
+
+@media screen and (min-width: 576px){
+
+    header img{
+        width: 10%;
+        display: inline;
+        margin: 0;
+    }
+
+    header nav a{
+        font-size: 25px;
+    }
+
+    header nav a:last-of-type{
+        padding-right: 0;
+    }
+
+    header{
+        padding: 0;
+    }
+
+    .flexContainer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .wrapper{
+        max-width: 80%;
+        margin: auto;
+    }
+
+    .desktopWrapper{
+        max-width: 80%;
+        margin: auto;
+    }
+}
