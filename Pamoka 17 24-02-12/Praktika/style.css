@@ -1,0 +1,47 @@
+div{
+    text-align: center;
+    background-color: blue;
+    transition: background-color 2s, width 2s;
+    border: 1px solid black;
+    height: 200px;
+    width: 200px;
+}
+
+.transition{
+    background-color: red;
+    transition-delay: 1s;
+}
+
+.transform:hover{
+    width: 400px;
+}
+
+.transformDiv{
+    animation: transformDiv 3s infinite;
+}
+
+@keyframes transformDiv {
+
+    10%{
+        transform: rotate(10deg) translateX(10px);
+        background-color: red;
+    }
+
+    50%{
+        transform: rotate(-20deg);
+        background-color: orange;
+        transform: translateX(-10px);
+    }
+
+    90%{
+        transform: rotate(20deg) translateY(10px);
+        background-color: yellow;
+    }
+
+    100%{
+        transform: rotate(360deg);
+        background-color: yellowgreen;
+    }
+
+}
+
