@@ -1,0 +1,337 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.flexContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header{
+    background-color: white;
+    padding: 15px 30px 15px 40px;
+    height: 10vh;
+}
+
+header p{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+header i{
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.purple{
+    color: #645cff;
+}
+
+#sectionContinueExploring{
+    height: 90vh;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#sectionContinueExploring h1, #sectionContinueExploring p, #sectionContinueExploring button{
+    color: white;
+    margin: 0 0 40px;
+}
+
+#sectionContinueExploring h1{
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+#sectionContinueExploring p{
+    width: 90%;
+    margin: 0 auto 40px;
+    line-height: 30px;
+}
+
+#sectionContinueExploring button{
+    margin-bottom: 0;
+    background-color: #645cff;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+#sectionAboutUs{
+    background-color: white;
+    padding: 40px;
+}
+
+.sectionTitle{
+    margin: 0 0 40px;
+    text-align: center;
+    letter-spacing: 5px;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+#sectionAboutUs img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#sectionAboutUs h2{
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+#sectionAboutUs p{
+    text-align: justify;
+}
+
+.noDecorationBlue{
+    text-decoration: none;
+    color: blue;
+}
+
+#sectionAboutUs p, #sectionAboutUs a{
+    font-weight: 500;
+}
+
+#sectionOurServices{
+    background-color: rgb(248, 248, 248);
+    padding: 40px;
+}
+
+.gridContainer{
+    display: grid;
+}
+
+.gridSectionOurServices{
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 25vh;
+}
+
+.textAlignCenter{
+    text-align: center;
+}
+
+#sectionOurServices i{
+    font-size: 23px;
+    background-color: #645cff;
+    padding: 10px;
+}
+
+#sectionOurServices h3{
+    letter-spacing: 1px;
+    font-size: 23px;
+}
+
+#sectionFeaturedTours{
+    background-color: white;
+    padding: 40px;
+}
+
+#sectionFeaturedTours img{
+    width: 100%;
+}
+
+.relative{
+    position: relative;
+}
+
+.label{
+    position: absolute;
+    top: 20px;
+    background-color: #645cff;
+    padding: 5px;
+    text-align: center;
+}
+
+.shadow{
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+    height: 56vh;
+}
+
+.featuredTours{
+    padding: 0 20px;
+}
+
+#sectionFeaturedTours p{
+    margin: 0;
+    padding: 2px;
+    padding-left: 5px;
+    font-weight: 500;
+}
+
+.flexColumn{
+    flex-direction: column;
+    gap: 40px;
+}
+
+#sectionFeaturedTours a{
+    display: block;
+    text-align: center;
+    margin: 50px;
+}
+
+#sectionOurGallery{
+    background-color: rgb(248, 248, 248);
+    padding: 40px 0 0;
+}
+
+#sectionOurGallery img{
+    width: 100%;
+}
+
+.purpleBackground{
+    background-color: #645cff;
+}
+
+.gridLatestInfo{
+    grid-template-columns: 45% 55%;
+    grid-auto-rows: 350px;
+    align-items: center;
+}
+
+#sectionLatestInfo{
+    color: white;
+    padding: 10px;
+    padding-bottom: 50px;
+}
+
+#sectionLatestInfo h1{
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 500;
+}
+
+#sectionLatestInfo h3{
+    line-height: 25px;
+    font-weight: 500;
+}
+
+#sectionLatestInfo button{
+    border-radius: 0;
+    border: 0;
+    width: 80px;
+    padding: 5px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+#sectionLatestInfo input{
+    width: 100%;
+    padding: 5px;
+    height: 40px;
+    position: absolute;
+}
+
+#sectionLatestInfo button:hover{
+    cursor: pointer;
+    background-color: #645cff;
+    color: white;
+}
+
+footer{
+    height: 40vh;
+    padding: 70px;
+    background-color: rgb(34, 34, 34);
+    color: white;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer i{
+    font-size: 22px;
+}
+
+.navGap{
+    gap: 20px;
+}
+
+footer p{
+    margin: 0;
+}
+
+#mobileHeaderNav{
+    display: none;
+}
+
+.desktopBackgroundGradient{
+    display:none;
+}
+
+@media screen and (min-width:1200px) {
+    header{
+        height: 20vh;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    #mobileHeaderNav{
+        display:unset;
+    }
+
+    #mobileHeaderNav a{
+        text-decoration: none;
+        color: black;
+        font-size: 22px;
+        font-weight: bold;
+        padding: 0 10px;
+    }
+
+    #sectionContinueExploring{
+        height: 150vh;
+        background-image: url("https://images.unsplash.com/photo-1605262221574-a1d0fc44aac0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        position: relative;
+    }
+
+    .desktopBackgroundGradient{
+        display:unset;
+        width: 100%;
+        height: 150vh;
+        background-image: linear-gradient(#645cff, #645cff28);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+
+    #sectionContinueExploring h1, #sectionContinueExploring p, #sectionContinueExploring button{
+        z-index: 1;
+    }
+
+    #sectionContinueExploring h1{
+        font-size: 110px;
+    }
+
+    #sectionContinueExploring p{
+        margin-top: 20px;
+        font-size: 25px;
+        line-height: 50px;
+    }
+
+    .hideOnMobile{
+        display: none;
+    }
+
+    #sectionContinueExploring button{
+        font-size: 25px;
+        width: auto;
+        height: 50px;
+        padding: 0 10px;
+    }
+
+    .desktopWidth{
+        width: 60%;
+        z-index: 1;
+    }
+}
