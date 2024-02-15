@@ -291,6 +291,7 @@ footer p{
         height: 150vh;
         background-image: url("https://images.unsplash.com/photo-1605262221574-a1d0fc44aac0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
         position: relative;
+        background-size: cover;
     }
 
     .desktopBackgroundGradient{
@@ -310,7 +311,7 @@ footer p{
     }
 
     #sectionContinueExploring h1{
-        font-size: 110px;
+        font-size: 90px;
     }
 
     #sectionContinueExploring p{
@@ -333,5 +334,115 @@ footer p{
     .desktopWidth{
         width: 60%;
         z-index: 1;
+    }
+
+    .desktopAboutUs{
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+    }
+
+    #sectionAboutUs img{
+        width: 95%;
+        aspect-ratio: 16 / 9;
+        position: absolute;
+        top: 5%;
+        right: 2%;
+        margin: 0;
+    }
+
+    .desktopAboutUsDiv{
+        width: 100%;
+        aspect-ratio: 16 / 9;
+    }
+
+    .desktopAboutUsBorder{
+        width: 95%;
+        border: 8px solid #645cff;
+        border-radius: 5px;
+        aspect-ratio: 16 / 9;
+    }
+
+    .gridSectionOurServices{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: 20vh;
+    }
+
+    .gridSectionOurServicesTwo{
+        display: grid;
+        grid-template-columns: 0.7fr 3fr;
+        grid-auto-rows: 25vh;
+    }
+
+    #sectionOurServices h3{
+        margin: 0;
+        font-size: 27px;
+    }
+
+    #sectionOurServices h3, #sectionOurServices p{
+        text-align: left;
+    }
+
+    #sectionOurServices i{
+        font-size: 30px;
+        display: inline-block;
+    }
+
+    .gridSectionFeaturedTours{
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 60vh;
+        gap: 25px;
+    }
+
+    #sectionFeaturedTours a{
+        margin-bottom: 25px;
+    }
+
+    .gridSectionOurGallery{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .gridSectionOurGallery img{
+        height: 100%;
+    }
+
+    #sectionLatestInfo{
+        color: white;
+        padding: 0 20px;
+    }
+
+    #sectionLatestInfo h1{
+        margin: 0;
+        letter-spacing: 7px;
+        font-weight: 400;
+    }
+
+    #sectionLatestInfo h3{
+        margin-bottom: 0;
+        font-weight: 400;
+    }
+
+    .gridLatestInfo{
+        grid-template-columns: 55% 45%;
+        grid-auto-rows: 250px;
+        align-items: center;
+        
+    }
+
+    .hideOnDesktop{
+        display: none;
+    }
+
+    #sectionLatestInfo button{
+        position: absolute;
+        right: 5px;
+        top: -5px;
+    }
+    
+    #sectionLatestInfo input{
+        position: absolute;
+        top: -10px;
     }
 }
