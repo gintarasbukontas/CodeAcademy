@@ -1,0 +1,236 @@
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 200px;
+}
+header img {
+  width: 80px;
+}
+header a {
+  padding: 0 10px;
+  color: rgb(0, 0, 66);
+  text-decoration: none;
+  font-weight: bold;
+}
+header button {
+  margin: 0 50px 0 35px;
+}
+
+.button-1 {
+  padding: 12px 15px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid rgb(182, 182, 182);
+  background: none;
+  color: rgb(0, 0, 66);
+}
+
+.button-2 {
+  padding: 12px 15px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  background-image: linear-gradient(to right, rgb(255, 115, 50), rgb(230, 73, 0));
+  color: white;
+}
+
+section {
+  padding: 20px 200px;
+}
+section img {
+  border-radius: 10px;
+}
+section h1 {
+  font-size: 50px;
+  color: rgb(0, 0, 66);
+  margin-top: 70px;
+  line-height: 50px;
+  width: 80%;
+}
+section p {
+  line-height: 25px;
+  width: 80%;
+  color: rgb(133, 133, 133);
+  padding-bottom: 20px;
+}
+
+.gridContainer {
+  display: grid;
+}
+
+.grid-col-2 {
+  grid-template-columns: 40% 60%;
+}
+
+.grid-col-5 {
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  justify-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+.w-70 {
+  width: 70%;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.wh100 {
+  width: 100%;
+  height: 100%;
+}
+
+.relative {
+  position: relative;
+}
+
+.img-pos1 {
+  position: absolute;
+  top: 20px;
+}
+
+.img-pos2 {
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+}
+
+.img-pos3 {
+  position: absolute;
+  right: 50px;
+  bottom: -20px;
+  background-image: linear-gradient(rgb(255, 242, 235), rgb(218, 244, 255));
+  width: 65%;
+  height: 100%;
+  top: 0;
+  right: -200px;
+  border-radius: 10px;
+}
+
+.img-pos4 {
+  position: absolute;
+  left: 550px;
+  font-size: 50px;
+  line-height: 30px;
+  letter-spacing: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+#section-1 .img-pos4 {
+  color: orangered;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.z-20 {
+  z-index: 20;
+}
+
+.z-30 {
+  z-index: 30;
+}
+
+.z-40 {
+  z-index: 40;
+}
+
+#section-1 {
+  padding-bottom: 50px;
+}
+
+.blue {
+  background-color: blue;
+}
+
+#section-2 {
+  margin-bottom: 40px;
+}
+#section-2 img {
+  width: 50%;
+}
+#section-2 h2 {
+  text-align: center;
+  font-size: 30px;
+  color: rgb(0, 0, 66);
+}
+
+.bg {
+  background-image: linear-gradient(rgb(255, 242, 235), rgb(218, 244, 255));
+  border-radius: 10px;
+  padding: 50px 0;
+}
+
+.grid-sec-3 {
+  grid-template-columns: 40% 60%;
+  grid-auto-rows: auto;
+}
+
+#section-3 h2 {
+  font-size: 35px;
+  margin: 0;
+  margin-bottom: 50px;
+  color: rgb(0, 0, 66);
+  width: 80%;
+}
+#section-3 h3 {
+  color: rgb(0, 0, 66);
+  width: 60%;
+}
+#section-3 h4 {
+  margin: 0;
+  font-size: 20px;
+  color: rgb(133, 133, 133);
+  font-weight: 400;
+}
+#section-3 #sec-3-img {
+  grid-row-start: 2;
+  grid-row-end: 5;
+  background-image: url("https://elminogroup.ir/media/thumbnails/videos/Submission.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  margin-right: 50px;
+}
+#section-3 i {
+  color: orangered;
+  margin-top: 10px;
+  font-size: 30px;
+}
+#section-3 button {
+  width: 150px;
+}
+
+.grid-col-2-s3 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.border-top {
+  border-top: 1px solid gray;
+  margin: 0 20px 20px 0;
+}/*# sourceMappingURL=style.css.map */
