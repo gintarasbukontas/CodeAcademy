@@ -49,3 +49,40 @@ console.log(balance.toFixed(2));
 balance -= 50;
 
 console.log(balance.toFixed(2));
+
+// Palyginimai
+
+// Uzduotis 1
+
+const text1 = "Labas";
+const text2 = "Sudie";
+console.log(text1===text2);
+
+// Uzduotis 2
+
+const number = 10;
+const text = "10";
+console.log(number>text);
+console.log(number==text);
+console.log(number===text);
+
+// Uzduotis 3 - teko paziureti ats
+
+let currentBalance = 50;
+let transaction = -50;
+let remainingBalance = currentBalance + transaction >= 0;
+console.log(remainingBalance);
+
+// Uzduotis 4 - nukopinta is ats
+
+const a1 = 15;
+const b1 = 7;
+const divisibleWithRemainder = a1 / b1 === 0;
+console.log("?", divisibleWithRemainder);
+
+// test
+
+const a2 = 5;
+const b2 = 1.13;
+const c2 = a2 % b2;
+console.log("c2 = ", c2.toFixed(0));
