@@ -53,12 +53,17 @@
 
 // Uzduotis Kvadratas
 
-// // su viena funkcija
-// let generatedNumber = 0;
 // function randomOneToTen(){
 //     const randomDecimal = Math.random();
 //     const randomNumber = Math.floor(randomDecimal * 10) + 1;
-//     generatedNumber = randomNumber * randomNumber;
 //     return randomNumber;
 // }
-// console.log(randomOneToTen(), "...", generatedNumber);
+
+// function squareNumber(number){
+//     const squared = number * number;
+//     return squared;
+// }
+
+// console.log("random skaicius nuo 1 iki 10 =", randomOneToTen());
+// console.log("ivestas skaicius pakeltas kvadratu =", squareNumber(2));
+// console.log("random skaicius pakeltas kvadratu =", squareNumber(randomOneToTen()));
