@@ -52,7 +52,7 @@ console.log(foundCities);
 
 console.log("---------- Uzduotis: Miestai is mazosios ----------");
 
-const foundCities2 = cities.some((x) => x[0] === x[0].toLocaleLowerCase());
+const foundCities2 = cities.some((x) => x[0] === x[0].toLowerCase());
 console.log(foundCities2);
 
 console.log("---------- Uzduotis: Visi is didziosios ----------");
