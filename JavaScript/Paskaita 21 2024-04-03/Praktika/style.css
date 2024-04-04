@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+#name, #age {
+    margin-bottom: 0;
+}
+
+#age {
+    color: orange;
+}
+
+#email {
+    margin-top: 0;
+    color: gray;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: rgb(233, 233, 233);
+    width: 600px;
+}
+
+img {
+    display: block;
+    margin: auto;
+    width: 90%;
+    padding-top: 20px;
+}
+
+#vip{
+    color: red;
+    border: 5px solid rgb(219, 219, 219);
+}
+
+td, th {
+    border: 1px solid black;
+    
+}
+
+td:not(:first-child) {
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+tr, td {
+    padding: 0;
+}
