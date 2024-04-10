@@ -1,0 +1,47 @@
+form, p {
+    text-align: center;
+}
+
+#buttonNewWord{
+    margin-top: 20px;
+}
+
+#wrongGuessText, #checkIfLetter, #checkIfSameLetter{
+    display: none;
+    color: red;
+}
+
+h2{
+    /* letter-spacing: 6px; */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  .modal-content button {
+    display: block;
+    margin-top: 10px;
+  }
+
+  img{
+    width: 50%;
+    display: block;
+    margin: auto;
+  }

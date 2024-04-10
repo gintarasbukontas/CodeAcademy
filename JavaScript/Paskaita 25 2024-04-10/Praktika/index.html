@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="module" src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <img src="images/6.jpg" alt="Pakaruoklis" />
+    <form id="guessingForm">
+      <h2 id="guessingWord">______</h2>
+      <input type="text" id="guessingInput" maxlength="1" />
+      <button type="submit" id="buttonSubmit" disabled>Spėti</button><br />
+      <p id="checkIfLetter">Leidžiamos tik raidės</p>
+      <p id="checkIfSameLetter">Pasikartojanti raidė</p>
+      <button id="buttonNewWord">Naujas žodis</button>
+    </form>
+    <p id="remainingGuessesText">Likę spėjimai:</p>
+    <p id="guessedLettersText"></p>
+    <p id="wrongGuessText">Neteisingas spėjimas</p>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <p id="alertResult">Custom Alert!</p>
+        <button id="modalOK">Gerai</button>
+      </div>
+    </div>
+  </body>
+</html>
