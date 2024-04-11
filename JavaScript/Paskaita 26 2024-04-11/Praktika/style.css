@@ -1,0 +1,26 @@
+.display-flex{
+    display: flex;
+}
+
+#addTaskInput{
+    margin-bottom: 20px;
+}
+
+p{
+    margin: 0;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.removeTaskButton{
+    border: 0;
+    font-weight: bold;
+}
+
+.complete{
+    text-decoration: line-through;
+}
+
+.incomplete{
+    text-decoration: none;
+}
