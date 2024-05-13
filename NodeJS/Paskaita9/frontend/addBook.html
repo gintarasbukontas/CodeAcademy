@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="addBook.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <header>
+    <div class="flex">
+      <img src="./img/book logo2.png" alt="Logo" />
+      <h1>GB Books</h1>
+    </div>
+  </header>
+  <body>
+    <section class="formContainer">
+      <h2>Add a Book!</h2>
+      <form>
+        <label for="title">Book Title</label>
+        <br />
+        <input type="text" id="title" required />
+        <br />
+        <label for="author">Book Author</label>
+        <br />
+        <input type="text" id="author" required />
+        <br />
+        <label for="genre">Book Genre</label>
+        <br />
+        <input type="text" id="genre" required />
+        <br />
+        <label for="price">Book Price</label>
+        <br />
+        <input type="text" id="price" required />
+        <br />
+        <label for="quantity">Book Quantity</label>
+        <br />
+        <input type="text" id="quantity" required />
+        <br />
+        <button type="submit" id="buttonSubmit">Submit</button>
+      </form>
+      <a href="./index.html">View Our Books!</a>
+    </section>
+  </body>
+</html>

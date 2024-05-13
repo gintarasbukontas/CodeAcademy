@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+:root {
+  --lightGray: rgb(241, 241, 241);
+  --darkerGray: rgb(231, 231, 231);
+  --darkGray: rgb(80, 80, 80);
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+header h1 {
+  font-size: 50px;
+  margin: 0;
+  padding: 10px;
+  font-style: italic;
+}
+
+header img {
+  max-width: 6%;
+  height: auto;
+}
+
+header {
+  padding: 20px;
+  height: 150px;
+  background-color: var(--darkerGray);
+  align-content: center;
+  border-bottom: 2px solid white;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+}
+
+th,
+td {
+  border: 2px solid white;
+  text-align: center;
+  font-size: 20px;
+}
+
+th {
+  background-color: var(--darkerGray);
+}
+
+.tableContainer,
+.formContainer {
+  width: 50%;
+  margin: auto;
+}
+
+.formContainer {
+  width: 15%;
+  margin: auto;
+}
+
+body {
+  background-color: var(--lightGray);
+}
+
+td button {
+  background-color: var(--darkerGray);
+  outline: none;
+  border: none;
+  margin: 5px;
+}
+
+td button:hover {
+  background-color: var(--darkGray);
+  color: var(--lightGray);
+}
+
+h2,
+a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+a {
+  margin-top: 20px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+form {
+  text-align: center;
+  border: 2px solid white;
+  padding: 20px;
+}
+
+label {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+input {
+  font-size: 20px;
+  margin-bottom: 10px;
+  outline: none;
+  border: none;
+}
+
+input:hover {
+  outline: 1px solid var(--darkGray);
+}
+
+input:focus {
+  outline: 1px solid var(--darkGray);
+}
+
+#buttonSubmit {
+  margin-top: 10px;
+  outline: none;
+  border: none;
+  background-color: var(--darkGray);
+  font-size: 20px;
+  color: white;
+}
+
+#buttonSubmit:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 30px;
+}
