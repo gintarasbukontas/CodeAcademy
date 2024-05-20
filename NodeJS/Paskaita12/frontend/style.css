@@ -1,0 +1,299 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --veryLightBlue: rgb(215, 230, 238);
+  --mainBlue: rgb(62, 94, 201);
+  --mainDarkBlue: rgb(21, 29, 51);
+  --mainGray: rgb(177, 177, 177);
+  --darkerGray: rgb(141, 141, 141);
+  --mainShadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  background-color: var(--veryLightBlue);
+  color: var(--mainDarkBlue);
+}
+
+header div {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  width: 33%;
+}
+
+header a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header {
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.01);
+}
+
+#membershipsPage {
+  color: var(--mainBlue);
+}
+
+#usersPage {
+  color: var(--mainGray);
+}
+
+.flexContainer {
+  display: flex;
+  margin: 0 200px;
+  justify-content: space-between;
+  position: relative;
+}
+
+main h1 {
+  margin-bottom: 0;
+}
+
+main p {
+  margin-top: 6px;
+  font-size: 16px;
+}
+
+#buttonNewMembership {
+  background-color: var(--mainBlue);
+  color: white;
+  padding: 10px;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: var(--mainShadow);
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#buttonNewUser {
+  background-color: var(--mainBlue);
+  color: white;
+  padding: 10px;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: var(--mainShadow);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#buttonNewMembership:hover {
+  background-color: var(--mainDarkBlue);
+}
+
+.membershipGrid,
+.usersGrid {
+  display: grid;
+  gap: 50px;
+  margin: 0 200px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+}
+
+.membershipCreation,
+.usersh1 {
+  margin: 0 200px;
+}
+
+.membershipCard,
+.centerForm,
+.userCard {
+  background-color: white;
+  width: 100%;
+  box-shadow: var(--mainShadow);
+  border-radius: 5px;
+}
+
+form {
+  width: 50%;
+  padding: 40px;
+  margin: auto;
+}
+
+.membershipCardTop {
+  border-bottom: 2px solid rgb(241, 241, 241);
+  text-align: center;
+  padding: 16px;
+}
+
+.membershipCardBottom {
+  text-align: right;
+  padding: 16px;
+}
+
+.membershipCardPrice {
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.membershipCardDescription {
+  font-size: 14px;
+}
+
+.membershipCardButton {
+  background-color: rgb(255, 218, 218);
+  color: rgb(243, 82, 82);
+  border: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+}
+
+label {
+  display: inline-block;
+  width: 150px;
+  text-align: right;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+input,
+textarea {
+  width: 400px;
+  height: 40px;
+  padding: 10px;
+  border: 0;
+  box-shadow: var(--mainShadow);
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+input::placeholder {
+  color: var(--mainGray);
+}
+
+textarea {
+  height: 160px;
+  min-width: 400px;
+  max-width: 400px;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.form-buttons {
+  text-align: center;
+}
+
+#buttonSubmit {
+  background-color: var(--mainBlue);
+  color: white;
+  padding: 10px;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: var(--mainShadow);
+  text-decoration: none;
+  margin: 0 4px;
+  font-weight: bold;
+}
+
+#buttonSubmit:hover {
+  background-color: var(--mainDarkBlue);
+}
+
+#buttonCancel {
+  background: none;
+  padding: 6px;
+  border: 0;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 0 4px;
+  font-weight: bold;
+}
+
+#buttonCancel:hover {
+  background-color: var(--mainGray);
+  box-shadow: var(--mainShadow);
+}
+
+footer p {
+  margin-top: 300px;
+  text-align: center;
+}
+
+#sortText {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+#sortText span {
+  color: var(--mainGray);
+}
+
+#sortText i {
+  color: var(--mainBlue);
+}
+
+.userName {
+  font-weight: bold;
+  color: var(--darkerGray);
+}
+
+.userSpan {
+  color: var(--mainBlue);
+}
+
+.userCard {
+  padding: 20px;
+}
+
+.userName,
+.userEmail,
+.userMembership,
+.userServiceId {
+  font-size: 20px;
+}
+
+.flexContainerUsers {
+  display: flex;
+  justify-content: space-between;
+}
+
+.labelUsers {
+  display: inline-block;
+  /* width: 150px; */
+  text-align: left;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+select {
+  width: 250px;
+  height: 40px;
+  padding: 10px;
+  border: 0;
+  box-shadow: var(--mainShadow);
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.formUsers {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: var(--mainShadow);
+}
+
+.sortArrow {
+  font-weight: bold;
+  color: red;
+  border: 1px solid red;
+}

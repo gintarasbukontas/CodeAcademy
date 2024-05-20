@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="newMembership.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>New Membership</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href="./memberships.html" id="membershipsPage">Memberships</a>
+        <a href="" id="usersPage">Users</a>
+      </div>
+    </header>
+    <main>
+      <section class="membershipCreation">
+        <h1>Create Membership</h1>
+        <div class="centerForm">
+          <form>
+            <div class="form-group">
+              <label for="inputName">Name</label>
+              <input type="text" id="inputName" required placeholder="Name" />
+            </div>
+            <div class="form-group">
+              <label for="inputPrice">Membership Price</label>
+              <input
+                type="number"
+                id="inputPrice"
+                required
+                placeholder="$ Membership Price"
+                step="0.01"
+              />
+            </div>
+            <div class="form-group">
+              <label for="inputDescription">Description</label>
+              <textarea name="" id="inputDescription"></textarea>
+            </div>
+            <div class="form-buttons">
+              <button id="buttonCancel">Cancel</button>
+              <button type="submit" id="buttonSubmit">New Membership</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright &copy; 2024 Membership Manager</p>
+    </footer>
+  </body>
+</html>
