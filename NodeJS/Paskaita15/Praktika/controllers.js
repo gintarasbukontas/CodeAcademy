@@ -37,7 +37,7 @@ export async function deleteItemById(req, res) {
     const found = await db.query(`select * from items where id = ${id}`);
 
     if (found.rows[0] !== undefined) {
-      const { rows } = await db.query(`select * from items where id = ${id}`);
+      const { rows } = await db.query(`delete from items where id = ${id}`);
       console.log(rows);
       res.json({ sucess: true });
     } else {

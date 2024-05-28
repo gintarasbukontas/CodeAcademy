@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-weight: 500;
+}
+
+:root {
+  --lightGray: rgb(240, 240, 240);
+  --mainGray: rgb(141, 141, 141);
+  --darkerGray: rgb(109, 109, 109);
+  --darkGray: rgb(49, 49, 49);
+  --mainShadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  background-color: var(--lightGray);
+  padding: 30px;
+}
+
+.navButton {
+  color: var(--mainGray);
+  text-decoration: none;
+  margin: 0 20px;
+}
+
+.navButton:hover {
+  color: var(--darkerGray);
+}
+
+main {
+  margin: 30px 16rem;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.card {
+  width: 100%;
+  box-shadow: var(--mainShadow);
+  border-radius: 5px;
+}
+
+.cardTop,
+.cardMiddle {
+  border-bottom: 1px solid var(--lightGray);
+}
+
+.card img {
+  display: block;
+  width: 90%;
+  margin: 20px auto;
+  height: 300px;
+  object-fit: scale-down;
+}
+
+.card h2,
+p,
+button {
+  margin: 10px 20px;
+}
+
+.carTitle {
+  color: var(--mainGray);
+}
+
+.card button {
+  border: none;
+  background: none;
+}
+
+.card button:hover {
+  background-color: var(--lightGray);
+}
+
+input {
+  border: 1px solid var(--lightGray);
+  box-shadow: var(--mainShadow);
+  margin-bottom: 20px;
+  height: 30px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+input:hover {
+  border: 1px solid var(--darkerGray);
+}
+
+#buttonSubmit,
+#buttonCancel {
+  border: none;
+  background-color: white;
+  padding: 6px;
+  margin: auto;
+}
+
+#buttonSubmit:hover,
+#buttonCancel:hover {
+  background-color: var(--darkerGray);
+}
+
+form {
+  background-color: var(--lightGray);
+  width: 30%;
+  margin: auto;
+  padding: 50px;
+  border-radius: 5px;
+}
+
+#buttonCancel {
+  background-color: var(--lightGray);
+}
+
+.statusTextSuccess {
+  text-align: center;
+  color: green;
+}
+
+.statusTextFail {
+  text-align: center;
+  color: red;
+}
+
+h1 {
+  text-align: center;
+  color: var(--mainGray);
+}
+
+.clicked {
+  color: var(--darkGray);
+}
+
+@media screen and (max-width: 576px) {
+  .gridContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  main {
+    margin: 30px 5rem;
+  }
+
+  nav {
+    text-align: center;
+    font-size: 26px;
+  }
+
+  form {
+    width: 100%;
+  }
+}

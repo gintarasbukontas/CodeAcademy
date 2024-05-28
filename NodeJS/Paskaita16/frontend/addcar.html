@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script type="module" src="addcar.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Add Car</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="./cars.html" class="navButton">CARS</a>
+        <a href="./addcar.html" class="navButton clicked">ADD CAR</a>
+      </nav>
+    </header>
+    <main>
+      <form>
+        <label for="inputTitle">TITLE</label>
+        <br />
+        <input type="text" id="inputTitle" />
+        <br />
+        <label for="inputImage">IMAGE URL</label>
+        <br />
+        <input type="text" id="inputImage" />
+        <br />
+        <label for="inputPrice">PRICE</label>
+        <br />
+        <input type="number" id="inputPrice" />
+        <br />
+        <label for="inputNumberplates">NUMBER PLATES</label>
+        <br />
+        <input type="text" id="inputNumberplates" />
+        <br />
+        <button type="submit" id="buttonSubmit">SUBMIT</button>
+        <button type="button" id="buttonCancel">CANCEL</button>
+      </form>
+      <p class="statusText"></p>
+    </main>
+  </body>
+</html>
