@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+}
+
+.bgGreen {
+  background-color: rgb(35, 92, 35);
+}
+
+.bgLightGreen {
+  background-color: rgb(210, 255, 210);
+}
+
+.bgGray {
+  background-color: rgb(230, 230, 230);
+}
+
+.padding {
+  padding: 20px;
+}
+
+.padding2 {
+  padding: 20px 20px 0 20px;
+}
+
+h1 {
+  color: white;
+  padding: 10px;
+  margin-top: 0;
+}
