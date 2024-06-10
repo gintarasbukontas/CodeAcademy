@@ -11,7 +11,7 @@ const { PORT, MONGO_URI } = process.env;
 mongoose
   .connect(MONGO_URI, { dbName: "usersAndMemberships" })
   .then(() => console.log("Connected to Mongo DB"))
-  .catch(() => console.log("Failed to connect to Mongo DB"));
+  .catch((error) => console.log(error.message));
 
 const app = express();
 
