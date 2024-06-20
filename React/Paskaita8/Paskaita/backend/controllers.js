@@ -57,7 +57,7 @@ export async function updateTodo(req, res) {
       todo.deadline = deadline;
     }
 
-    if (completed) {
+    if (completed !== undefined) {
       todo.completed = completed;
     }
 
