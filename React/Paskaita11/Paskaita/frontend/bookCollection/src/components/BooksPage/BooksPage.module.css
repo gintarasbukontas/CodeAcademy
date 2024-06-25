@@ -1,0 +1,10 @@
+.grid {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+  border: 1px solid rgb(65, 65, 65);
+  padding: 10px;
+}

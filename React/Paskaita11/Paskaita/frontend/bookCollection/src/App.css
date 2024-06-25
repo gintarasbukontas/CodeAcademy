@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: rgb(44, 44, 44);
+}
+
+h1 {
+  color: orange;
+  text-align: center;
+}
+
+form {
+  margin: 50px;
+  text-align: center;
+}
+
+label {
+  color: orange;
+  font-size: 20px;
+}
+
+input {
+  margin: 4px 0px 20px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.274);
+  outline: 0;
+  border: 0;
+  border-radius: 5px;
+  height: 30px;
+  width: 250px;
+}
+
+h2 {
+  color: orange;
+}
+
+p {
+  color: white;
+}
+
+h3 {
+  color: orange;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(175, 175, 175);
+}
+
+a:hover {
+  color: orange;
+}
+
+button {
+  border: 0;
+  padding: 6px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: orange;
+}
