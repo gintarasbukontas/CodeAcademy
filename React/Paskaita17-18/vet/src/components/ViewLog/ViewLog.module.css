@@ -1,0 +1,30 @@
+.grid {
+  /* margin: 10px; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-items: center;
+  margin: 0 200px;
+}
+
+.card {
+  border: 1px solid rgb(228, 228, 228);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 200px;
+}
+
+.flex2 {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  margin: 0 200px;
+}

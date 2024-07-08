@@ -1,0 +1,73 @@
+* {
+  color: rgb(73, 73, 73);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+button {
+  border-radius: 5px;
+  padding: 10px 6px;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 2px;
+  min-width: 100px;
+}
+
+.button-white {
+  background-color: white;
+  color: orange;
+  border: 1px solid orange;
+}
+
+.button-white:hover,
+.button-white2:hover {
+  background-color: rgb(247, 247, 247);
+}
+
+.button-orange {
+  background-color: orange;
+  color: white;
+  border: 1px solid orange;
+}
+
+.button-orange2 {
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 2px;
+  min-width: 80px;
+  background-color: orange;
+  color: white;
+  border: 1px solid orange;
+}
+
+.button-white2 {
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 2px;
+  min-width: 80px;
+  background-color: white;
+  color: orange;
+  border: 1px solid orange;
+}
+
+.button-orange:hover,
+.button-orange2:hover {
+  background-color: rgb(255, 181, 42);
+}
+
+nav a {
+  color: orange;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+form {
+  text-align: center;
+}
+
+input {
+  margin-bottom: 20px;
+}
