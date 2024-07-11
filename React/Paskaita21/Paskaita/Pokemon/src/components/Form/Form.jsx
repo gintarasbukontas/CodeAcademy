@@ -10,8 +10,8 @@ const API_LINK = "https://pokeapi.co/api/v2/pokemon";
 export default function Form({ setPokemon }) {
   const [pokeName, setPokeName] = useState("");
 
-  function getPokemon() {
-    axios
+  async function getPokemon() {
+    await axios
       .get(`${API_LINK}/${pokeName}`)
       .then((response) => {
         setPokemon(response.data);
