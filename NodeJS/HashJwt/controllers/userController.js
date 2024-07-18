@@ -46,7 +46,7 @@ export async function loginUser(req, res) {
 
     res.json({ token });
   } else {
-    res.json({ message: "Incorrect password" });
+    res.status(400).json({ message: "Incorrect password" });
   }
 }
 
