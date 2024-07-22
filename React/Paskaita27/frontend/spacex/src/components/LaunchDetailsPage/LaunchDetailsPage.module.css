@@ -1,0 +1,12 @@
+.links a {
+  padding: 0 10px;
+}
+
+.card {
+  width: 600px;
+}
+
+.card img {
+  margin-top: 20px;
+  width: 200px;
+}

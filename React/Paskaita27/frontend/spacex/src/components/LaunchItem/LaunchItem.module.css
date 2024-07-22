@@ -1,0 +1,21 @@
+.card {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+  width: 500px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  background-color: rgba(255, 255, 255, 0.01);
+  cursor: pointer;
+}
+
+.card h2 {
+  margin: 0;
+}
+
+.card p {
+  margin: 0;
+}
