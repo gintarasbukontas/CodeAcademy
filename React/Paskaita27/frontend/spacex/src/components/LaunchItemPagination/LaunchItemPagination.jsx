@@ -1,6 +1,8 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import LaunchItem from "../LaunchItem/LaunchItem";
+import DateFilter from "../DateFilter/DateFilter";
+import styles from "./LaunchItemPagination.module.css";
 
 const API_URL = import.meta.env.VITE_API_URL;
 
@@ -10,6 +12,10 @@ export default function LaunchItemPagination() {
   const [skip, setSkip] = useState(0);
   const [page, setPage] = useState(1);
   const [totalPages, setTotalPages] = useState(0);
+  const [search, setSearch] = useState("");
+  const [startDate, setStartDate] = useState();
+  const [endDate, setEndDate] = useState();
+  const [documents, setDocuments] = useState(0);
 
   const handleNextPage = () => {
     if (page < totalPages) {
@@ -32,8 +38,6 @@ export default function LaunchItemPagination() {
   };
 
   useEffect(() => {
-    console.log(page);
-    console.log(skip);
     const postData = async () => {
       try {
         const body = {
@@ -44,16 +48,43 @@ export default function LaunchItemPagination() {
         };
         const response = await axios.post(`${API_URL}/query`, body);
         console.log(response.data.docs);
-        setLaunches(response.data.docs);
+        let docs = response.data.docs;
+
+        if (search) {
+          docs = docs.filter((doc) =>
+            doc.name.toLowerCase().includes(search.toLowerCase())
+          );
+        }
+
+        if (startDate && endDate) {
+          const start = new Date(startDate).toISOString();
+          const end = new Date(endDate).toISOString();
+          docs = docs.filter((doc) => {
+            const docDate = new Date(doc.date_utc).toISOString();
+            return docDate >= start && docDate <= end;
+          });
+        }
+
+        if (startDate && endDate) {
+          const start = new Date(startDate).toISOString();
+          const end = new Date(endDate).toISOString();
+          docs = docs.filter((doc) => {
+            const docDate = new Date(doc.date_utc).toISOString();
+            return docDate >= start && docDate <= end;
+          });
+        }
+
+        setDocuments(docs.length);
+
+        setLaunches(docs);
         setTotalPages(Math.ceil(response.data.totalDocs / amount));
       } catch (error) {
         alert(error.message);
-        console.log(error.message);
       }
     };
 
     postData();
-  }, [page, amount, skip]);
+  }, [page, amount, skip, search, startDate, endDate]);
 
   return (
     <div>
@@ -68,7 +99,25 @@ export default function LaunchItemPagination() {
         <option value="20">20</option>
         <option value="50">50</option>
       </select>
-
+      <label htmlFor="searchBar"> Search: </label>
+      <input
+        type="text"
+        id="searchBar"
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
+      />
+      <br />
+      <p className={styles.marginBot}>Filter Launches by Date</p>
+      <div className={styles.flex}>
+        <p>From:</p>
+        <DateFilter
+          startDate={startDate}
+          setStartDate={setStartDate}
+          start={true}
+        />
+        <p>To: </p>
+        <DateFilter endDate={endDate} setEndDate={setEndDate} end={true} />
+      </div>
       <div>
         {launches.map((launch) => (
           <div key={launch.id}>
@@ -85,7 +134,10 @@ export default function LaunchItemPagination() {
       <button onClick={handlePreviousPage} disabled={page === 1}>
         Previous Page
       </button>
-      <button onClick={handleNextPage} disabled={page === totalPages}>
+      <button
+        onClick={handleNextPage}
+        disabled={page === totalPages || documents < amount}
+      >
         Next Page
       </button>
     </div>
